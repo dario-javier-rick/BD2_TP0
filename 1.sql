@@ -29,6 +29,14 @@ CREATE TABLE Paises
   FOREIGN KEY (IdContinente) REFERENCES Continentes (Id)
 );
 
+CREATE TABLE Limites
+(
+  Pais_Id1 INTEGER NOT NULL,
+  Pais_Id2 INTEGER NOT NULL,
+  FOREIGN KEY (Pais_Id1) REFERENCES Paises (Id),
+  FOREIGN KEY (Pais_Id2) REFERENCES Paises (Id)
+);
+
 CREATE TABLE Censos
 (
   Id SERIAL,
