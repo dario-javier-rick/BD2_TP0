@@ -8,8 +8,9 @@ CREATE VIEW Poblacion AS
       Paises.Id,
       Paises.Nombre,
       UltimoCenso.Poblacion,
-      UltimoCenso.FechaCenso
-      get_pop_variation_rate(Paises.Id) PoblacionEstimada
+      UltimoCenso.FechaCenso,
+      POWER(get_pop_variation_rate(Paises.Id), 
+            DATEDIFF(year, UltimoCenso.FechaCenso, CURRENT_DATE)) PoblacionEstimada
     FROM Paises
     JOIN (SELECT IdPais 
                  Poblacion, 
