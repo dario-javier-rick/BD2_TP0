@@ -4,10 +4,11 @@
 -- Tablas del trabajo práctico N°0
 
 /*
-DROP DATABASE IF EXISTS TP0;
 DROP TABLE IF EXISTS Censos;
+DROP TABLE IF EXISTS Limites;
 DROP TABLE IF EXISTS Paises;
 DROP TABLE IF EXISTS Continentes;
+DROP DATABASE IF EXISTS TP0;
 */
 
 CREATE DATABASE TP0;
@@ -25,7 +26,7 @@ CREATE TABLE Paises
   IdContinente INTEGER NOT NULL,
   FormaGobierno VARCHAR(40) NOT NULL,
   Poblacion BIGINT NOT NULL,
-  FechaIndependencia DATE NOT NULL,
+  FechaIndependencia DATE,
   FOREIGN KEY (IdContinente) REFERENCES Continentes (Id)
 );
 
@@ -42,7 +43,7 @@ CREATE TABLE Limites
 CREATE TABLE Censos
 (
   Id SERIAL PRIMARY KEY,
-  FechaCenso DATE NOT NULL,
+  FechaCenso SMALLINT NOT NULL,
   IdPais INTEGER NOT NULL,
   Poblacion BIGINT NOT NULL,
   FOREIGN KEY (IdPais) REFERENCES Paises (Id)

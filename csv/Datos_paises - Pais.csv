@@ -1,0 +1,80 @@
+pais_id,Nombre,independencia,continente_id,Forma_de_gobierno,poblacion
+1,Argentina,09-07-1816,1,Republica,42890368
+2,Brasil,29-08-1829,1,Republica,202450649
+3,Bolivia,06-08-1825,1,Republica,1088800
+4,Paraguay,03-10-1813,1,Republica,6953646
+5,Uruguay,28-08-1828,1,Republica,3372000
+6,Chile,12-02-1818,1,Republica,18261884
+7,Peru,09-12-1824,1,Republica,31826018
+8,Ecuador,24-05-1822,1,Republica,16298217
+9,Colombia,07-08-1819,1,Republica,50364000
+10,Venezuela,05-07-1811,1,Republica,31028337
+11,Arabia Saudita,20-05-1927,5,Monarquia absoluta,31540372
+12,Corea del Sur,12-08-1945,5,Republica,50617045
+13,Indonesia,17-08-1945,5,Republica,257563815
+14,Irak,03-10-1932,5,Republica,36423395
+15,Malasia,31-08-1957,5,Monarquia constitucional,30331007
+16,Pakistan,14-08-1947,5,Republica,188924874
+17,Singapur,09-08-1965,5,Republica,5535002
+18,Tailandia,23-03-1906,5,Monarquia constitucional,67959359
+19,Filipinas,12-06-1898,5,Republica,100699395
+20,Japon,11-02-1873,5,Monarquia constitucional,126958472
+21,Guatemala,15-09-1821,1,Republica,17383245
+22,Belice,21-09-1981,1,Monarquia constitucional,380010
+23,Honduras,15-09-1821,1,Republica,9126229
+24,El Salvador,15-09-1821,1,Republica,7415479
+25,Nicaragua,15-09-1821,1,Republica,6279712
+26,Costa Rica,15-09-1821,1,Republica,5003393
+27,Panama,03-11-1903,1,Republica,4158783
+28,Portugal,01-12-1640,3,Republica,10562178
+29,España,17-04-1814,3,Monarquia parlamentaria,46815916
+30,Francia,14-07-1789,3,Republica,67158000
+31,Gran Bretaña,02-09-1783,3,Monarquia constitucional,63260000
+32,Alemania,18-01-1871,3,Republica,80219695
+33,Bélgica,04-10-1830,3,Monarquia parlamentaria,11376070
+34,Austria,26-10-1955,3,Republica,8401940
+35,Italia,02-06-1946,3,Republica,59433744
+36,Dinamarca,05-06-1849,3,Monarquia parlamentaria,5560628
+37,Suiza,01-08-1291,3,Republica,7827970
+38,Albania,28-11-1912,3,república parlamentaria,3038594
+39,Bielorrusia,27-07-1990,3,República presidencialista,9648533
+40,Bulgaria,22-09-1991,3,República parlamentaria,110879
+41,Eslovaquia,01-01-1993,3,República parlamentaria,5430740
+42,Eslovenia,25-06-1991,3,República parlamentaria,2046120
+43,Moldavia,27-08-1991,3,República parlamentaria,3583288
+44,Polonia,23-06-1989,3,República parlamentaria,38483957
+45,Hungría,01-10-1918,3,República parlamentaria,9830485
+46,República Checa,01-01-1993,3,República parlamentaria,10519000
+47,Rumanía,10-05-1877,3,República semipresidencialista,19942642
+48,Chipre,20-09-1960,3,República presidencialista,1205575
+49,Croacia,,3,República parlamentaria,4313707
+50,Estonia,,3,República parlamentaria,1258545
+51,Finlandia,,3,República parlamentaria,5948211
+52,Grecia,,3,República parlamentaria,10773253
+53,Irlanda,,3,República parlamentaria,4952473
+54,Letonia,,3,República parlamentaria,1965686
+55,Lituania,,3,República presidencialista,2854235
+56,Luxemburgo,,3,Monarquía Constitucional Parlamentaria,590000
+57,Malta,,3,República parlamentaria,437000
+58,Países Bajos,,3,Monarquía Constitucional Parlamentaria,17095000
+59,Polonia,,3,República parlamentaria,38370000
+60,Suecia,,3,Monarquía Constitucional Parlamentaria,9977000
+61,Canadá,01-07-1867,1,Monarquía constitucional,36709000
+62,Estados Unidos,04-07-1776,1,República,325886000
+63,México,27-09-1821,1,Nación democrática,129164000
+64,Australia,17-05-1814,4,Monarquía constitucional,24599000
+65,Fiyi,06-10-1987,4,República parlamentaria,885000
+66,Kiribati,24-07-1979,4,República parlamentaria,116398
+67,Islas Marshall,22-12-1990,4,República democrática,53127
+68,Islas Salomón,07-07-1978,4,Monarquía constitucional,611343
+69,Nueva Zelanda,26-09-1907,4,Monarquía parlamentaria,4844549
+70,Papúa Nueva Guinea,16-09-1975,4,Monarquía constitucional parlamentaria,8251162
+71,Argelia,05-07-1962,2,República semipresidencialista,42739000
+72,Libia,10-02-1947,2,Gobierno provisional,15189000
+73,Egipto,,2,República semipresidencialista,97886000
+74,Marruecos,,2,Monarquía constitucional,34948000
+75,Malí,20-06-1960,2,República semipresidencialista,19952000
+76,Chad,11-08-1960,2,República presidencialista,15189000
+77,Sudán,01-01-1956,2,República federal presidencialista,4198500
+78,Niger,03-08-1960,2,República semipresidencialista,21154000
+79,Nigeria,01-10-1960,2,República federal presidencialista,20748300
