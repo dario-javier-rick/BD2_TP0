@@ -1,9 +1,3 @@
--- Motor: PostgreSQL 10.4
-
--- Function: get_pop_variation_rate(int)
-
---DROP CASCADE FUNCTION get_pop_variation_rate();
-
 CREATE OR REPLACE FUNCTION get_pop_variation_rate(_idPais INTEGER) 
   RETURNS real AS
 $BODY$
@@ -18,9 +12,9 @@ BEGIN
 
 	RAISE NOTICE 'Se invoca get_pop_variation_rate()';
   
-	  SELECT Poblacion, FechaCenso 
+	  SELECT Poblacion, FechaCenso
+    	INTO PoblacionCenso1, FechaCenso1
 	    FROM Censos
-	    INTO PoblacionCenso1, FechaCenso1
 	    JOIN Paises
 	      ON Censos.IdPais = Paises.Id
 	    WHERE Paises.Id = _idPais
@@ -28,13 +22,13 @@ BEGIN
 	    LIMIT 1 OFFSET 1;
 
 	  SELECT Poblacion, FechaCenso
+    	INTO PoblacionCenso2, FechaCenso2
 	    FROM Censos
-	    INTO PoblacionCenso2, FechaCenso2
 	    JOIN Paises
 	      ON Censos.IdPais = Paises.Id
 	    WHERE Paises.Id = _idPais
 	    ORDER BY FechaCenso DESC
-	    LIMIT 1 OFFSET 2
+	    LIMIT 1 OFFSET 2;
 
 	  SELECT (PoblacionCenso1 * 100 / PoblacionCenso2) / DATEDIFF(year, FechaCenso1, FechaCenso2)
 	  INTO Crecimiento;
@@ -50,6 +44,4 @@ END;
 $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
-ALTER FUNCTION get_pop_variation_rate() OWNER TO postgres;
-
-----------------------------------------------------------------------------------------
+ALTER FUNCTION get_pop_variation_rate(int) OWNER TO postgres;
