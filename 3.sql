@@ -1,3 +1,9 @@
+-- Motor: PostgreSQL 10.4
+
+-- Function: get_pop_variation_rate(int)
+
+--DROP CASCADE FUNCTION get_pop_variation_rate();
+
 CREATE OR REPLACE FUNCTION get_pop_variation_rate(_idPais INTEGER) 
   RETURNS real AS
 $BODY$
