@@ -33,10 +33,10 @@ BEGIN
 	    ORDER BY FechaCenso DESC
 	    LIMIT 1 OFFSET 1;
 
-	  Crecimiento := (PoblacionCenso1 * 100 / PoblacionCenso2) / (FechaCenso1 - FechaCenso2);
+		Crecimiento := (CAST(PoblacionCenso1 AS REAL)/ CAST(PoblacionCenso2 AS REAL)) / (FechaCenso1 - FechaCenso2);
 
-	  raise notice 'PoblacionCenso1: %', PoblacionCenso1;
-	  raise notice 'FechaCenso1: %', FechaCenso1;
+    raise notice 'PoblacionCenso1: %', PoblacionCenso1;
+    raise notice 'FechaCenso1: %', FechaCenso1;
     raise notice 'PoblacionCenso2: %', PoblacionCenso2;
     raise notice 'FechaCenso2: %', FechaCenso2;
     raise notice 'Crecimiento: %', Crecimiento;
@@ -57,5 +57,5 @@ ALTER FUNCTION get_pop_variation_rate(int) OWNER TO postgres;
 
 ----------------------------------------------------------------------------------------
 
-select get_pop_variation_rate(2);
+select get_pop_variation_rate(1);
 

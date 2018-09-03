@@ -3,13 +3,15 @@
 ----------------------------------------------------------------------------------------
 -- Vista de población segón censo - trabajo práctico N°0
 
+-- DROP VIEW Poblacion;
+
 CREATE OR REPLACE VIEW Poblacion AS
     SELECT 
       Paises.Id,
       Paises.Nombre,
       DatosUltimoCenso.Poblacion,
       UltimoCenso.FechaCenso,
-      POWER(get_pop_variation_rate(Paises.Id), (UltimoCenso.FechaCenso -  DATE_PART('year', CURRENT_DATE))) PoblacionEstimada
+      CAST(POWER(get_pop_variation_rate(Paises.Id), (UltimoCenso.FechaCenso -  DATE_PART('year', CURRENT_DATE))) AS BIGINT) + DatosUltimoCenso.Poblacion PoblacionEstimada
     FROM Paises
     JOIN (SELECT IdPais,
             MAX(FechaCenso) AS FechaCenso
@@ -23,4 +25,3 @@ CREATE OR REPLACE VIEW Poblacion AS
 ----------------------------------------------------------------------------------------
 
 select * from Poblacion;
-
