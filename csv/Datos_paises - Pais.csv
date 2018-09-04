@@ -45,20 +45,7 @@ pais_id,Nombre,independencia,continente_id,Forma_de_gobierno,poblacion
 44,Polonia,23-06-1989,3,República parlamentaria,38483957
 45,Hungría,01-10-1918,3,República parlamentaria,9830485
 46,República Checa,01-01-1993,3,República parlamentaria,10519000
-47,Rumanía,10-05-1877,3,República semipresidencialista,19942642
-48,Chipre,20-09-1960,3,República presidencialista,1205575
-49,Croacia,,3,República parlamentaria,4313707
-50,Estonia,,3,República parlamentaria,1258545
-51,Finlandia,,3,República parlamentaria,5948211
-52,Grecia,,3,República parlamentaria,10773253
-53,Irlanda,,3,República parlamentaria,4952473
-54,Letonia,,3,República parlamentaria,1965686
-55,Lituania,,3,República presidencialista,2854235
-56,Luxemburgo,,3,Monarquía Constitucional Parlamentaria,590000
-57,Malta,,3,República parlamentaria,437000
-58,Países Bajos,,3,Monarquía Constitucional Parlamentaria,17095000
-59,Polonia,,3,República parlamentaria,38370000
-60,Suecia,,3,Monarquía Constitucional Parlamentaria,9977000
+47,Rumania,10-05-1877,3,República semipresidencialista,19942642
 61,Canadá,01-07-1867,1,Monarquía constitucional,36709000
 62,Estados Unidos,04-07-1776,1,República,325886000
 63,México,27-09-1821,1,Nación democrática,129164000
@@ -71,10 +58,80 @@ pais_id,Nombre,independencia,continente_id,Forma_de_gobierno,poblacion
 70,Papúa Nueva Guinea,16-09-1975,4,Monarquía constitucional parlamentaria,8251162
 71,Argelia,05-07-1962,2,República semipresidencialista,42739000
 72,Libia,10-02-1947,2,Gobierno provisional,15189000
-73,Egipto,,2,República semipresidencialista,97886000
-74,Marruecos,,2,Monarquía constitucional,34948000
+73,Egipto,18-06-1953,2,República semipresidencialista,97886000
+74,Marruecos,02-03-1956,2,Monarquía constitucional,34948000
 75,Malí,20-06-1960,2,República semipresidencialista,19952000
 76,Chad,11-08-1960,2,República presidencialista,15189000
 77,Sudán,01-01-1956,2,República federal presidencialista,4198500
 78,Niger,03-08-1960,2,República semipresidencialista,21154000
 79,Nigeria,01-10-1960,2,República federal presidencialista,20748300
+80,China,01-10-1949,5,Comunista,1300000000
+81,Corea del Norte,09-09-1948,5,Estado Socialista Junche,25370000
+82,Emiratos Arabes Unidos,02-12-1771,5,Monarquia Constitucional,9270000
+83,India,15-08-1947,5,Democratica,1324000000
+84,Israel,14-05-1948,5,Parlamentaria,8547000
+85,Iran,01-04-1979,5,Islamica Bajo Teocracia,80280000
+86,Nepal,25-09-1768,5,Republica Federal Parlamentaria,30485798
+87,Afganistan,19-08-1919,5,Republica Islamica Presidencialista,33332025
+88,Qatar,03-09-1971,5,Emirato Absolutista,2700539
+89,Georgia,09-04-1991,5,Republica,37100000
+90,Yemen,22-05-1990,5,Gobierno provisional,27584213
+91,Oman,18-11-1971,5,Monarquia Absoluta,4320000
+92,Barein,15-08-1971,5,Monarquia Constitucional,1234571
+93,Jordania,25-05-1950,5,Monarquia Constitucional,9819651
+94,Kuwaiit,26-02-1991,5,Emirato Constitucional,2965316
+95,Palestina,30-11-2012,5,Republica Parlamentaria,4816503
+96,Angola,11-11-1975,2,Republica,20172332
+97,Argelia,05-07-1962,2,Republica Presidencial,40263711
+98,Benín,01-08-1960,2,Republica Presidencial,10741458
+99,Botsuana,30-09-1966,2,Republica,2209208
+100,Burkina Faso,05-08-1960,2,Republica Semiprecidencialista,19512533
+101,Burundi,01-07-1962,2,Republica Presidencial,11099298
+102,Cabo Verde,05-07-1975,2,Republica Semiprecidencialista,553432
+103,Camerún,01-01-1960,2,Republica Presidencial,24360803
+104,República Centroafricana,20-9-1972,2,Republica Presidencial,5507257
+105,Chad,11-08-1960,2,Republica Presidencial,11852462
+106,Comoras,06-07-1975,2,Republica Presidencial,794678
+107,República del Congo,15-08-1960,2,Republica presidencial,4852412
+108,República Democrática del Congo,30-06-1960,2,Republica presidencial,81331050
+109,Costa de Marfil,07-08-1960,2,Republica presidencial,23740424
+110,Egipto,15-06-1922,2,Republica Semiprecidencialista,94666993
+111,Eritrea,24-05-1993,2,Republica,5869869
+112,Etiopía,21-08-1995,2,Republica federal Parlamentaria,102374044
+113,Gabón,17-08-1960,2,Republica,1738541
+114,Gambia,20-12-1965,2,Republica,2009648
+115,Ghana,06-03-1957,2,Republica presidencial,26908262
+116,Guinea,2-10-1958,2,Republica presidencial,12093349
+117,Guinea-Bisáu,10-09-1974,2,Republica Semiprecidencialista,1759159
+118,Guinea Ecuatorial,12-10-1968,2,Republica presidencial,759451
+119,Kenia,12-12-1964,2,Republica presidencial,46790758
+120,Lesoto,4-10-1966,2,Monarquia parlamentaria,1953070
+121,Liberia,26-07-1847,2,republica presidencial,4299944
+122,Libia,10-02-1947,2,Gobierno provisional,6541948
+123,Madagascar,26-06-1960,2,republica presidencial,24430325
+124,Malaui,06-07-1964,2,republica presidencial,18570321
+125,Malí,20-06-1960,2,Republica Semiprecidencialista,17467108
+126,Marruecos,02-03-1956,2,Monarquia Constitucional,33655786
+127,Mauricio,12-03-1968,2,Republica Parlamentaria,1348242
+128,Mauritania,28-11-1960,2,Republica islamica Presidencialista,3677293
+129,Mozambique,25-06-1975,2,Republica Semiprecidencialista,25930150
+130,Namibia,21-03-1990,2,Republica Semiprecidencialista,2436469
+131,Níger,03-08-1960,2,Republica semiprecidencialista,18638600
+132,Nigeria,01-10-1960,2,Republica Federal Presidencial,186053386
+133,Ruanda,01-07-1962,2,Republica Semiprecidencialista,12988423
+134,Santo Tomé y Príncipe,12-07-1975,2,Republica Semiprecidencialista,197541
+135,Senegal,20-06-1960,2,Republica Semiprecidencialista,14320055
+136,Seychelles,29-06-1976,2,republica presidencial,93186
+137,Sierra Leona,27-04-1961,2,republica presidencial,6018888
+138,Somalia,26-06-1961,2,Republica Parlamentaria,10817354
+139,Suazilandia,06-09-1968,2,Monarquia Absoluta,1451428
+140,Sudáfrica,11-12-1931,2,Republica Parlamentaria,54300704
+141,Sudán,01-01-1956,2,Republica Federal Presidencial,36729501
+142,Sudán del Sur,09-07-2011,2,republica presidencial,12530717
+143,Tanzania,26-04-1964,2,republica presidencial,52482726
+144,Togo,27-04-1960,2,Republica Semiprecidencialista,7756937
+145,Túnez,20-03-1957,2,Republica Semiprecidencialista,11134588
+146,Uganda,09-10-1963,2,republica presidencial,38319241
+147,Yibuti,27-06-1977,2,republica presidencial,846687
+148,Zambia,24-10-1964,2,republica presidencial,15510711
+149,Zimbabue,18-04-1980,2,republica presidencial,14546961

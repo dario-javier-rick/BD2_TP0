@@ -4,8 +4,8 @@
 -- Tablas del trabajo práctico N°0
 
 /*
-DROP TABLE IF EXISTS Censos;
 DROP TABLE IF EXISTS Limites;
+DROP TABLE IF EXISTS Censos;
 DROP TABLE IF EXISTS Paises;
 DROP TABLE IF EXISTS Continentes;
 DROP DATABASE IF EXISTS TP0;
