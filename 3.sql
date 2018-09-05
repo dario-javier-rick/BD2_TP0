@@ -3,10 +3,10 @@
 -- Function: get_pop_variation_rate(int)
 ----------------------------------------------------------------------------------------
 
---DROP CASCADE FUNCTION get_pop_variation_rate();
+-- DROP FUNCTION get_pop_variation_rate(_idPais INTEGER) CASCADE;
 
 CREATE OR REPLACE FUNCTION get_pop_variation_rate(_idPais INTEGER) 
-  RETURNS real AS
+  RETURNS REAL AS
 $BODY$
 DECLARE
 	PoblacionCenso1 BIGINT;
@@ -17,7 +17,7 @@ DECLARE
 		
 BEGIN
 
-	RAISE NOTICE 'Se invoca get_pop_variation_rate()';
+	RAISE NOTICE 'Se invoca get_pop_variation_rate(%)', _idPais;
   
 	  SELECT Censos.Poblacion, Censos.FechaCenso
     	INTO PoblacionCenso1, FechaCenso1
@@ -33,19 +33,27 @@ BEGIN
 	    ORDER BY FechaCenso DESC
 	    LIMIT 1 OFFSET 1;
 
-		Crecimiento := (CAST(PoblacionCenso1 AS REAL)/ CAST(PoblacionCenso2 AS REAL)) / (FechaCenso1 - FechaCenso2);
+		IF (FechaCenso1 IS NULL OR FechaCenso2 IS NULL)
+			THEN
+				RAISE EXCEPTION 'Pais sin censos suficientes --> %', _idPais;
+		END IF;
 
-    raise notice 'PoblacionCenso1: %', PoblacionCenso1;
-    raise notice 'FechaCenso1: %', FechaCenso1;
-    raise notice 'PoblacionCenso2: %', PoblacionCenso2;
-    raise notice 'FechaCenso2: %', FechaCenso2;
-    raise notice 'Crecimiento: %', Crecimiento;
+		Crecimiento := ((PoblacionCenso1::REAL * 100 / PoblacionCenso2::REAL) - 100) / (FechaCenso1 - FechaCenso2);
+
+	/*
+    RAISE NOTICE 'PoblacionCenso1: %', PoblacionCenso1;
+    RAISE NOTICE 'FechaCenso1: %', FechaCenso1;
+    RAISE NOTICE 'PoblacionCenso2: %', PoblacionCenso2;
+    RAISE NOTICE 'FechaCenso2: %', FechaCenso2;
+    RAISE NOTICE 'Crecimiento: %', Crecimiento;
+	*/
 
 	RETURN Crecimiento;
 
 	EXCEPTION
 	WHEN OTHERS THEN
-		RAISE NOTICE 'Ocurrió un error general en get_pop_variation_rate';
+		RAISE NOTICE 'Ocurrió un error general en get_pop_variation_rate() ';
+		RAISE NOTICE '% %', SQLERRM, SQLSTATE;
 	RETURN NULL;
 
 END;
@@ -57,5 +65,5 @@ ALTER FUNCTION get_pop_variation_rate(int) OWNER TO postgres;
 
 ----------------------------------------------------------------------------------------
 
-select get_pop_variation_rate(1);
+select postgres.public.get_pop_variation_rate(1);
 
